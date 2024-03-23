@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crea Speed</title>
+<link rel="stylesheet" href="styles.css">
+<script src="script.js" defer></script>
+<style>
+.logo-container {
+    text-align: center;
+}
+.logo-container img {
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="welcome-page">
+        <div class="logo-container">
+            <img src="https://i.imgur.com/DpDtPpg.png" alt="Crea Speed Logo">
+        </div>
+        <h1>Welcome</h1>
+        <button onclick="showLoginPage()">Login</button>
+    </div>
+
+    <div class="login-page" style="display: none;">
+        <h2>Login Page</h2>
+        <button onclick="showBranchCodePage()">Login</button>
+        <button onclick="showTrainingPage()">Training</button>
+    </div>
+
+    <div class="branch-code-page" style="display: none;">
+        <h2>Branch Code</h2>
+        <input type="text" placeholder="Enter branch code">
+        <button onclick="showNextPage()">Next</button>
+    </div>
+
+    <div class="credentials-page" style="display: none;">
+        <h2>Credentials</h2>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="authenticateUser()">Next</button>
+        <p id="error-message" style="color: red;"></p> <!-- Error message display -->
+    </div>
+
+    <div class="orders-page" style="display: none;">
+        <h2>Orders</h2>
+        <div id="orders-list">
+            <!-- Orders will be dynamically added here -->
+        </div>
+    </div>
+
+    <div class="message-sent-page" style="display: none;">
+        <h2>Message Sent</h2>
+        <button onclick="showProductsPage()">Done</button>
+    </div>
+
+    <div class="products-page" style="display: none;">
+        <h2>Ordered Products</h2>
+        <div id="products-list">
+            <!-- Products will be dynamically added here -->
+        </div>
+        <button onclick="showAlternativeProducts()">Choose Alternative</button>
+    </div>
+
+    <div class="alternative-products" style="display: none;">
+        <h2>Alternative Products</h2>
+        <div id="alternative-list">
+            <!-- Alternative products will be dynamically added here -->
+        </div>
+        <button onclick="returnToProductsPage()">Back to Ordered Products</button>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .welcome-page {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .logo-container {
+            margin-bottom: 20px;
+        }
+
+        .logo-container img {
+            width: 200px;
+            height: 150px;
+        }
+
+        button {
+            padding: 12px 32px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: block;
+            margin: 10px auto;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .order-item,
+        .product-item {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #ffc107;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .status {
+            float: right;
+            margin-left: 20px;
+            font-size: 18px;
+        }
+
+        .checkmark,
+        .cross {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 24px;
+            margin-right: 30px; /* Increased margin */
+        }
+
+        .product-name {
+            margin-right: 30px; /* Increased margin */
+        }
+
+        /* CSS style for icons and their frames */
+        .icon-frame {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            border: 2px solid #FFA500; /* Orange border color */
+            border-radius: 5px; /* Rounded corners */
+            text-align: center;
+            line-height: 26px; /* Center the text inside the frame */
+            font-size: 20px; /* Enlarge the icons */
+            margin-right: 30px; /* Adjust the spacing between the icon and the product name */
+        }
+
+        /* Specify the spacing between the icon and the product name */
+        .product-name {
+            margin-right: 30px; /* Adjust the spacing between the icon and the product name */
+        }
+
+        /* Set colors for both icons */
+        .correct-icon {
+            color: #28a745; /* Color for the checkmark icon */
+        }
+
+        .wrong-icon {
+            color: #dc3545; /* Color for the cross icon */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Other elements for the ordered products page -->
+    </div>
+</body>
+</html>
